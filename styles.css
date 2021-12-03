@@ -1,5 +1,5 @@
 /*Where all the fancy decorations go*/
 body {
-    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fpreviews.123rf.com%2Fimages%2Fbalinature%2Fbalinature1710%2Fbalinature171000065%2F87440625-food-frame-with-set-of-japanese-food-on-dark-background-sushi-rolls-nigiri-raw-salmon-steak-rice-and.jpg&imgrefurl=https%3A%2F%2Fwww.123rf.com%2Fphoto_87440625_food-frame-with-set-of-japanese-food-on-dark-background-sushi-rolls-nigiri-raw-salmon-steak-rice-and.html&tbnid=IiZtrRCKqur06M&vet=12ahUKEwiWx7CO8Mf0AhUGZawKHaVdCwAQMygBegUIARDdAQ..i&docid=yfsjHXOBtqcuwM&w=1300&h=866&q=sushi%20background&ved=2ahUKEwiWx7CO8Mf0AhUGZawKHaVdCwAQMygBegUIARDdAQ");
+    background-image: ("https://previews.123rf.com/images/balinature/balinature1710/balinature171000065/87440625-food-frame-with-set-of-japanese-food-on-dark-background-sushi-rolls-nigiri-raw-salmon-steak-rice-and.jpg");
     background-color: #cccccc;
 } 
