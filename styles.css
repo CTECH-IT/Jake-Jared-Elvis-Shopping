@@ -1,5 +1,5 @@
 /*Where all the fancy decorations go*/
 body {
-    background-image: ("https://previews.123rf.com/images/balinature/balinature1710/balinature171000065/87440625-food-frame-with-set-of-japanese-food-on-dark-background-sushi-rolls-nigiri-raw-salmon-steak-rice-and.jpg");
+    background-image: url("https://previews.123rf.com/images/balinature/balinature1710/balinature171000065/87440625-food-frame-with-set-of-japanese-food-on-dark-background-sushi-rolls-nigiri-raw-salmon-steak-rice-and.jpg");
     background-color: #cccccc;
 } 
