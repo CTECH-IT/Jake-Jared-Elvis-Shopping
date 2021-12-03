@@ -1,4 +1,4 @@
 /*Where all the fancy decorations go*/
 body {
-    background-image: linear-gradient(rgb(0, 217, 255), rgba(20, 10, 109, 0.842));
+    background-color: linear-gradient(rgb(0, 217, 255), rgba(20, 10, 109, 0.842));
 } 
