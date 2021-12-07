@@ -11,9 +11,36 @@
 </head>
 
 <body>
-    <h1>Ubermaki</h1>
-    <h2>Place Your Order Please</h2>
-    <div class="radio">
+    <header>
+        <h1>UberMaki</h1>
+    </header>
+    <section>
+        <div class="card card-default">
+            <div class="card-body">
+                <form data-sushi-order="form">
+                    <div class="form-group">
+                        <label for="sushiOrder">Name:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="container">
+                        <p>Check the boxes for spicyness level:</p>
+                        <form>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Mild</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Hot</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Burning</label>
+                            </div>
+                        </form>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="">
         <label>
             <input type="radio" name="size" value="umami">
             Umami
