@@ -2,3 +2,13 @@ body {
     background-image: url("https://previews.123rf.com/images/balinature/balinature1710/balinature171000065/87440625-food-frame-with-set-of-japanese-food-on-dark-background-sushi-rolls-nigiri-raw-salmon-steak-rice-and.jpg");
     background-color: #cccccc;
 }
+
+.main-header {
+    color: whitesmoke;
+
+}
+
+.sub-header {
+    color: white;
+    font-size: 30px;
+}
