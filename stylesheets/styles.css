@@ -31,4 +31,7 @@ body {
     padding: 0.4em 1em;
     }
 
-
+.thumbnail-item {
+    display: block;
+    width: 100%;
+}
