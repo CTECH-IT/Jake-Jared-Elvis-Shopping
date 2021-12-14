@@ -36,3 +36,9 @@ body {
     display: block;
     width: 100%;
 }
+
+.image-tiny {
+    display: block;
+    width: 10px;
+    height: 10px;
+}
