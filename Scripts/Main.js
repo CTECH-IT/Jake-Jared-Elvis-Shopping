@@ -1,7 +1,7 @@
 (function (window){
     'use strict';
 
-const SUPER_SUSHI = '[super-yummy=food]'
+const Server_URL = 'http://saturn.rochesterschools.org:8080/json';
 
 let App = window.App;
 let Checklist = App.Checklist;
