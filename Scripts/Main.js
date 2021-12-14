@@ -11,4 +11,6 @@ let RemoteDataStore = App.RemoteDataStore;
 let FormHandler = App.FormHandler;
 let Validation = App.Validation; 
 
+formHandler.addInputHandler(Validation.isCompanyEmail);
+
 })(window);
