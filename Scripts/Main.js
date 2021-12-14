@@ -10,4 +10,5 @@ let DataStore = App.DataStore;
 let RemoteDataStore = App.RemoteDataStore;
 let FormHandler = App.FormHandler;
 let Validation = App.Validation 
+
 })(window);
