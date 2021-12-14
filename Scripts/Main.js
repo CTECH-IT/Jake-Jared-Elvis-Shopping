@@ -1,4 +1,4 @@
-(function (window){
+(function (window) {
     'use strict';
 
 const SUPER_SUSHI = '[super-yummy=food]'
