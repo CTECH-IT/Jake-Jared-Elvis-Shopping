@@ -20,21 +20,21 @@
             <div class="card-body">
                 <form data-sushi-order="form">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <label for="emailInput">Email address</label>
+                        <input type="email" class="form-control" name="emailAddress" if="emailInput" value=""
                             placeholder="Enter email">
                     </div>
                     <div class="container">
                         <p>Check the boxes for add-ons:</p>
                         <form>
                             <div class="checkbox">
-                                <label><input type="checkbox" value="">Wasabi</label>
+                                <label><input type="checkbox" name="side" value="">Wasabi</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" value="">Soy Sauce</label>
+                                <label><input type="checkbox" name="side" value="">Soy Sauce</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" value="">Chop Sticks</label>
+                                <label><input type="checkbox" name="side" value="">Chop Sticks</label>
                             </div>
                         </form>
                     </div>
@@ -46,14 +46,14 @@
                             <img src="https://media.discordapp.net/attachments/915626474013327461/917801549114265610/Z.png"
                                 alt="1.Mega-Roll" class="img-thumbnail">
                             <div class="checkbox">
-                                <label><input type="checkbox" value="">Mega Roll</label>
+                                <label><input type="checkbox" name="sushi" value="Mega-Roll">Mega Roll</label>
                             </div>
                         </div>
                         <div class="col-sm">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj20tZeIYmUQTip5YBPIMTjuw9GuyzODryVQ&usqp=CAU"
                                 alt="2.Cali-Roll" class="img-thumbnail">
                             <div class="checkbox">
-                                <label><input type="checkbox" value="">Cali-Roll</label>
+                                <label><input type="checkbox" name="sushi" value="Cali-roll">Cali-Roll</label>
                             </div>
                         </div>
                         <div class="col-sm">
