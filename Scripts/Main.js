@@ -5,9 +5,9 @@
 const Server_URL = 'http://saturn.rochesterschools.org:8080/json';
 
 let App = window.App;
-let Checklist = App.Checklist;
 let Truck = App.Truck;
 let DataStore = App.DataStore;
+let Checklist = App.Checklist;
 let RemoteDataStore = App.RemoteDataStore;
 let FormHandler = App.FormHandler;
 let Validation = App.Validation; 
