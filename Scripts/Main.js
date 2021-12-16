@@ -2,7 +2,7 @@
     'use strict';
 
     const FORM_SELECTOR = '[data-sushi-order="form"]';
-const Server_URL = 'http://saturn.rochesterschools.org:8080/json';
+    const Server_URL = 'http://saturn.rochesterschools.org:8080/json';
 
 let App = window.App;
 let Truck = App.Truck;

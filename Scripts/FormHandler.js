@@ -4,7 +4,7 @@
     let App = window.App || {};
     let $ = window.jQuery;
 
-    function FormHandler() {
+    function FormHandler(selector) {
         if (!selector) {
             throw new Error('No selector provided!');
         }
@@ -20,16 +20,9 @@
         this.$formElement.on('submit', function(event) {
             event.preventDefault();
 
-            let data = {};
-            $(this).serializeArray().forEach(function (item) {
-                data[item.name] = item.value;
-                console.log(item.name + 'is' + item.value);
-            });
+            let data = $(this).serializeArray();
             console.log(data);
-            func(data);
-
-            this.reset();
-            this.element[0].focus();
+            
         });
     }
 
