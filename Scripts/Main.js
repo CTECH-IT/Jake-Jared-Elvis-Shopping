@@ -15,7 +15,7 @@ let Validation = App.Validation;
 let myTruck = new Truck('12345', new DataStore());
 
 window.myTruck = myTruck
-formHandler.addInputHandler(Validation.isCompanyEmail);
+
 
 let formHandler = new FormHandler(FORM_SELECTOR);
 formHandler.addSubmitHandler(myTruck.createOrder.bind(myTruck));
