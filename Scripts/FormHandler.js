@@ -1,6 +1,8 @@
 (function (window) {
     'use strict'
 
+    const FORM_SELECTOR = '[data-sushi-order="form"]';
+
     let App = window.App || {};
     let $ = window.jQuery;
 
@@ -27,6 +29,8 @@
             });
             console.log(data);
             func(data);
+
+            this.reset();
             
         });
     }

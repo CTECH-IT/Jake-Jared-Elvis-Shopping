@@ -24,4 +24,4 @@
     formHandler.addSubmitHandler(myTruck.createOrder.bind(myTruck));
     console.log(formHandler);
 
-})(window); s
+})(window); 
