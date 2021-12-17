@@ -22,9 +22,9 @@
         }.bind(this));
     };
 
-    CheckList.prototype.addRow = function (coffeeOrder) {
-        this.removeRow(coffeeOrder.emailAddress);
-        var rowElement = new Row(coffeeOrder);
+    CheckList.prototype.addRow = function (sushiOrder) {
+        this.removeRow(sushiOrder.emailAddress);
+        var rowElement = new Row(sushiOrder);
         this.$element.append(rowElement.$element);
     };
 
@@ -35,7 +35,7 @@
             .remove();
     };
 
-    function Row(coffeeOrder) {
+    function Row(sushiOrder) {
         let $div = $('<div></div>', {
             'data-sushi-order': 'checkbox',
             'class': 'checkbox'
@@ -43,16 +43,16 @@
         let $label = $('<label></label>');
         let $checkbox = $('<input></input>', {
             type: 'checkbox',
-            value: coffeeOrder.emailAddress
+            value: sushiOrder.emailAddress
         });
 
-        let description = coffeeOrder.size + ' ';
-        if (coffeeOrder.flavor) {
-            description += coffeeOrder.flavor + ' ';
+        let description = sushiOrder.size + ' ';
+        if (sushiOrder.flavor) {
+            description += sushiOrder.flavor + ' ';
         }
-        description += coffeeOrder.coffee + ', ';
-        description += ' (' + coffeeOrder.emailAddress + ')';
-        description += ' [' + coffeeOrder.strength + 'x]';
+        description += sushiOrder.sushi + ', ';
+        description += ' (' + sushiOrder.emailAddress + ')';
+        description += ' [' + sushiOrder.strength + 'x]';
 
         $label.append($checkbox);
         $label.append(description);
