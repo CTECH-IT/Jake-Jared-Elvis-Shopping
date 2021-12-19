@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ubermaki</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-
-</head>
-
 <body class="container">
     <header>
         <h1 class="main-header">UberMaki</h1>
@@ -22,7 +13,7 @@
                     <div class="form-group">
                         <label for="emailInput">Email address</label>
                         <input type="email" class="form-control" name="emailAddress" id="emailInput" value=""
-                            placeholder="Enter email" >
+                            placeholder="Enter email">
                     </div>
                     <div class="container">
                         <p>Check the boxes for add-ons:</p>
@@ -41,15 +32,13 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm">
-                                <img src="https://media.discordapp.net/attachments/915626474013327461/917801549114265610/Z.png"
-                                    alt="1.Mega-Roll" class="img-thumbnail">
+                                <img src="images/mega-roll.jpg" alt="1.Mega-Roll" class="img-thumbnail">
                                 <div class="checkbox">
                                     <label><input type="checkbox" name="sushi" value="Mega-Roll">Mega Roll</label>
                                 </div>
                             </div>
                             <div class="col-sm">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj20tZeIYmUQTip5YBPIMTjuw9GuyzODryVQ&usqp=CAU"
-                                    alt="2.Cali-Roll" class="img-thumbnail">
+                                <img src="images/cali-roll.jpg" alt="2.Cali-Roll" class="img-thumbnail">
                                 <div class="checkbox">
                                     <label><input type="checkbox" name="sushi" value="Cali-roll">Cali-Roll</label>
                                 </div>
@@ -87,15 +76,31 @@
                     </div>
                     <button type="submit" class="btn btn-success btn-lg">Purchase</button>
                     <button type="reset" class="btn btn-danger btn-lg">Reset</button>
+                    <div class="card card-default">
+                        <div class="card-body">
+                          <h4>Pending Orders:</h4>
+                          <div data-sushi-order="checklist">
+                          </div>
+                        </div>
+                      </div>
                 </form>
             </div>
         </div>
     </section>
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ubermaki</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="stylesheets/styles.css">
 
+    </head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <script src="scripts/validation.js" charset="utf-8"></script>
     <script src="scripts/checklist.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <script src="scripts/formhandler.js" charset="utf-8"></script>
     <script src="scripts/remotedatastore.js" charset="utf-8"></script>
     <script src="scripts/datastore.js" charset="utf-8"></script>

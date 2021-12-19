@@ -4,7 +4,7 @@
     let App = window.App || {};
     let Validation = {
         isCompanyEmail: function (email) {
-            return /.+@Gmail\.com%/.test(email);
+            return /.+@gmail\.com$/.test(email);
         }
     };
 

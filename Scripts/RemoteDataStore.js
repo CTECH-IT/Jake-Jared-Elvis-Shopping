@@ -3,6 +3,12 @@
     var App = window.App || {};
     var $ = window.jQuery;
 
+    function RemoteDataStore(url) {
+        if (!url) {
+            throw new Error('No remote url supplied.');
+        }
+        this.serverUrl = url;
+    }
 
     RemoteDataStore.prototype.get = function (key, cb) {
         //makes a get call to the server, but pass an email

@@ -1,8 +1,6 @@
 (function (window) {
     'use strict'
 
-    const FORM_SELECTOR = '[data-sushi-order="form"]';
-
     let App = window.App || {};
     let $ = window.jQuery;
 
@@ -32,6 +30,19 @@
 
             this.reset();
             
+            this.elements[0].focus();.0
+        });
+    }
+
+    FormHandler.prototype.addInputHandler = function (func) {
+        console.log('Setting input handler for form');
+        this.$formElement.on('input', '[name="emailAddress"]', function (event) {
+            let emailAddress = event.target.value;
+            if (func(emailAddress) == true){
+                event.target.setCustomValidity('');
+            } else {
+                event.target.setCustomValidity(emailAddress + ' is not an authorized email address!');
+            }
         });
     }
 
