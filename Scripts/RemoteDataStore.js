@@ -10,6 +10,19 @@
         this.serverUrl = url;
     }
 
+    RemoteDataStore.prototype.add = function (key, val){
+        $.post(this.serverUrl, val, function (serverResponse) {
+            console.log(serverResponse);
+        });
+    };
+
+    RemoteDataStore.prototype.getAll = function (cb) {
+        $.get(this.serverUrl, function (serverResponse){
+            console.log(serverResponse);
+            cb(serverResponse);
+        });
+    };
+
     RemoteDataStore.prototype.get = function (key, cb) {
         //makes a get call to the server, but pass an email
         //so it returns just one order
@@ -22,7 +35,8 @@
 
     RemoteDataStore.prototype.remove = function (key) {
         //call the server url using the ajax 'DELETE' command
-        $.ajax(this.serverUrl + '?emailAddress=' + key, { type: 'DELETE' });
+        $.ajax(this.serverUrl + '?emailAddress=' + key, {
+        type: 'DELETE' });
     };
 
     App.RemoteDataStore = RemoteDataStore;

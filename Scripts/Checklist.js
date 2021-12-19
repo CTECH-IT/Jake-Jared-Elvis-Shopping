@@ -45,13 +45,35 @@
             value: sushiOrder.emailAddress
         });
 
-        let description = sushiOrder.size + ' ';
-        if (sushiOrder.flavor) {
-            description += sushiOrder.flavor + ' ';
+        let description = ' ' + sushiOrder.amount + ', ';
+
+        if (sushiOrder.mega) {
+            description += sushiOrder.mega + ', ';
         }
-        description += sushiOrder.sushi + ', ';
+        if (sushiOrder.cali) {
+            description += sushiOrder.cali + ', ';
+        }
+        if (sushiOrder.hirame) {
+            description += sushiOrder.hirame + ', ';
+        }
+        if (sushiOrder.bincho) {
+            description += sushiOrder.bincho + ', ';
+        }
+        if (sushiOrder.ahi) {
+            description += sushiOrder.ahi + ', ';
+        }
+        if (sushiOrder.aji) {
+            description += sushiOrder.aji + ', ';
+        }
+
+
+        if (sushiOrder.sides) {
+            description += sushiOrder.sides + ' ';
+        }
+
+
+
         description += ' (' + sushiOrder.emailAddress + ')';
-        description += ' [' + sushiOrder.strength + 'x]';
 
         $label.append($checkbox);
         $label.append(description);
