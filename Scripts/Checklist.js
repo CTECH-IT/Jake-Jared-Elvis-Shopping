@@ -3,6 +3,9 @@
     let App = window.App || {};
     let $ = window.jQuery;
 
+    let totalPrice = 0;
+    let totalPriceWithModifier = 0;//do not judge me for this name, it is literally 5 am so stfu
+
     function CheckList(selector) {
         if (!selector) {
             throw new Error('No selector provided');
@@ -49,31 +52,42 @@
 
         if (sushiOrder.mega) {
             description += sushiOrder.mega + ', ';
+            totalPrice += 15;
         }
         if (sushiOrder.cali) {
             description += sushiOrder.cali + ', ';
+            totalPrice += 1;
         }
         if (sushiOrder.hirame) {
             description += sushiOrder.hirame + ', ';
+            totalPrice += 1.55;
         }
         if (sushiOrder.bincho) {
             description += sushiOrder.bincho + ', ';
+            totalPrice += 1.50;
         }
         if (sushiOrder.ahi) {
             description += sushiOrder.ahi + ', ';
+            totalPrice += 1.10;
         }
         if (sushiOrder.aji) {
             description += sushiOrder.aji + ', ';
+            totalPrice += 1.25;
         }
 
+        totalPriceWithModifier = totalPrice * sushiOrder.amount;
 
         if (sushiOrder.sides) {
             description += sushiOrder.sides + ' ';
+            totalPriceWithModifier += 5;
         }
 
+        description += ' (' + sushiOrder.emailAddress + ') ';
 
+        description += 'total price: $' + totalPriceWithModifier;
 
-        description += ' (' + sushiOrder.emailAddress + ')';
+        totalPrice = 0;
+        totalPriceWithModifier = 0;
 
         $label.append($checkbox);
         $label.append(description);
