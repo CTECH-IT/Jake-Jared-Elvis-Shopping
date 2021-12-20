@@ -20,10 +20,19 @@
     window.myTruck = myTruck;
 
     remoteDS.getAll(function(orders) {
-        neworder = 0;
-        myTruck.createOrder(neworder);
-    });
+        Object.entries(orders).forEach((entry) => {
+            const [key, value] = entry;
+            console.log(`** ${key}: ${value} **`);
+            Object.entries(value).forEach((field) => {
+              const [k, v] = field;
+              console.log(`----- ${k}: ${v}`);
+            });
+          });
+          
+      
+        });   
     
+
     let formHandler = new FormHandler(FORM_SELECTOR);
 
     checkList.addClickHandler(myTruck.deliverOrder.bind(myTruck));
