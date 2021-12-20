@@ -19,6 +19,11 @@
 
     window.myTruck = myTruck;
 
+    remoteDS.getAll(function(orders) {
+        neworder = 0;
+        myTruck.createOrder(neworder);
+    });
+    
     let formHandler = new FormHandler(FORM_SELECTOR);
 
     checkList.addClickHandler(myTruck.deliverOrder.bind(myTruck));
@@ -49,3 +54,4 @@ i need sleep
 its 5 am
 whats that bright thing in the sky?
 */
+
