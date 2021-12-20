@@ -20,18 +20,10 @@
     window.myTruck = myTruck;
 
     remoteDS.getAll(function(orders) {
-        Object.entries(orders).forEach((entry) => {
-            const [key, value] = entry;
-            console.log(`** ${key}: ${value} **`);
-            Object.entries(value).forEach((field) => {
-              const [k, v] = field;
-              console.log(`----- ${k}: ${v}`);
-            });
-          });
-          
-      
-        });   
-    
+        for (let order of Object.values(orders)) {
+            myTruck.createOrder(order);
+        }
+    });
 
     let formHandler = new FormHandler(FORM_SELECTOR);
 
