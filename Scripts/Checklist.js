@@ -68,7 +68,7 @@
         }
         if (sushiOrder.ahi) {
             description += sushiOrder.ahi + ', ';
-            totalPrice += 1;
+            totalPrice += 1;//for some reason if i put this as 15 cents extra it immidietly adds 0.0000000006 cents to the total
         }
         if (sushiOrder.aji) {
             description += sushiOrder.aji + ', ';
@@ -84,7 +84,16 @@
 
         description += ' (' + sushiOrder.emailAddress + ') ';
 
-        description += 'total price: $' + totalPriceWithModifier;
+        description += '(Delivery Instructions: ';
+
+        if(sushiOrder.deliveryInstructions) {
+            description += sushiOrder.deliveryInstructions;
+        } 
+        else {
+            description += 'none';
+        }
+
+        description += ') total price: $' + totalPriceWithModifier
 
         totalPrice = 0;
         totalPriceWithModifier = 0;
