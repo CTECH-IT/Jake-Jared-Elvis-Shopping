@@ -60,7 +60,7 @@
         }
         if (sushiOrder.hirame) {
             description += sushiOrder.hirame + ', ';
-            totalPrice += 1.55;
+            totalPrice += 1.50;
         }
         if (sushiOrder.bincho) {
             description += sushiOrder.bincho + ', ';
@@ -68,14 +68,14 @@
         }
         if (sushiOrder.ahi) {
             description += sushiOrder.ahi + ', ';
-            totalPrice += 1.10;
+            totalPrice += 1;
         }
         if (sushiOrder.aji) {
             description += sushiOrder.aji + ', ';
-            totalPrice += 1.25;
+            totalPrice += 1.5;
         }
 
-        totalPriceWithModifier = totalPrice * sushiOrder.amount;
+        totalPriceWithModifier = totalPrice * sushiOrder.amount; 
 
         if (sushiOrder.sides) {
             description += sushiOrder.sides + ' ';
