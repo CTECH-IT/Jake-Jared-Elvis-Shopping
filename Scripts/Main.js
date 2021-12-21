@@ -3,7 +3,7 @@
 
     const FORM_SELECTOR = '[data-sushi-order="form"]';
     const CHECKLIST_SELECTOR = '[data-sushi-order="checklist"]';
-    const SERVER_URL = 'http://saturn.rochesterschools.org:8080/json';//where the fuck was this link pulled outta
+    const SERVER_URL = 'http://saturn.rochesterschools.org:8080/json';
 
     let App = window.App;
     let Truck = App.Truck;

@@ -4,7 +4,7 @@
     let $ = window.jQuery;
 
     let totalPrice = 0;
-    let totalPriceWithModifier = 0;//do not judge me for this name, it is literally 5 am so stfu
+    let totalPriceWithModifier = 0;//do not judge me for this name, it is literally 5 am
 
     function CheckList(selector) {
         if (!selector) {
