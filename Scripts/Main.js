@@ -23,7 +23,7 @@
         for (let order of Object.values(orders)) {
             myTruck.createOrder(order);
         }
-        CheckList.Row(sushiOrder)
+        CheckList.Row(order);
     });
 
     let formHandler = new FormHandler(FORM_SELECTOR);
