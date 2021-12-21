@@ -16,6 +16,8 @@
         }
     }
 
+    
+
     CheckList.prototype.addClickHandler = function (func) {
         this.$element.on('click', 'input', function (event) {
             var email = event.target.value;
