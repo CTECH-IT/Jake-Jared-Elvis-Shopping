@@ -22,7 +22,7 @@
     remoteDS.getAll(function(orders) {
         for (let order of Object.values(orders)) {
             myTruck.createOrder(order);
-            checkList.Row(order);
+            
         }
     });
 
