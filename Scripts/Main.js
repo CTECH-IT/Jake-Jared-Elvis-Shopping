@@ -22,8 +22,8 @@
     remoteDS.getAll(function(orders) {
         for (let order of Object.values(orders)) {
             myTruck.createOrder(order);
-        }
         CheckList.Row(order);
+        }
     });
 
     let formHandler = new FormHandler(FORM_SELECTOR);
