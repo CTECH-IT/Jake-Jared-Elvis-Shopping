@@ -16,7 +16,7 @@
     }
 
     FormHandler.prototype.addSubmitHandler = function (func) {
-        console.log(obamium);
+        console.log(data);
         console.log('Setting the submit handler for the form...');
         this.$formElement.on('submit', function(event) {
             event.preventDefault();
